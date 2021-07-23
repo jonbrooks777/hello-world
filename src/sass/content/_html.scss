@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+
+  &:after,
+  &:before {
+    box-sizing: border-box;
+    pointer-events: none;
+  }
+}
+
+html {}
+
+body {
+  margin: 0;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  color: $bl;
+  font-family: $font-family-1;
+}
+
+h1 {
+  @include h1;
+}
+
+h2 {
+  @include h2;
+}
+
+h3 {
+  @include h3;
+}
+
+h4 {
+  @include h4;
+}
+
+h5 {
+  @include h5;
+}
+
+h6 {
+  @include h6;
+}
+
+p {
+  margin: 0 0 $gutter;
+}
+
+a {
+  text-decoration: none;
+  color: $m1;
+  @include transition(all, 0.3s);
+
+  &:focus,
+  &:hover {
+    color: $m2;
+    @include transition(all, 0.3s);
+  }
+}
+
+span {}
+
+hr {}
+
+ol,
+ul {
+  li {}
+}
+
+table {
+  th {}
+
+  td {}
+
+  tr {}
+}
+
+img {}
+
+video {}
+
+iframe {}
+
+.hidden {
+  display: none !important;
+}

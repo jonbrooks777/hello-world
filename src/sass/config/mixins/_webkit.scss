@@ -1,0 +1,28 @@
+@mixin translate3d($values...) {
+  -webkit-transform: translate3d($values);
+  -moz-transform: translate3d($values);
+  -ms-transform: translate3d($values);
+  -o-transform: translate3d($values);
+  transform: translate3d($values);
+}
+@mixin translate($values...) {
+  -webkit-transform: translate($values);
+  -moz-transform: translate($values);
+  -ms-transform: translate($values);
+  -o-transform: translate($values);
+  transform: translate($values);
+}
+@mixin transition($transition, $values...) {
+  -webkit-transition: $transition $values;
+  -moz-transition: $transition $values;
+  -ms-transition: $transition $values;
+  -o-transition: $transition $values;
+  transition: $transition $values;
+}
+@mixin shadow($color, $values...) {
+  -webkit-box-shadow: $values $color;
+  -moz-box-shadow: $values $color;
+  -ms-box-shadow: $values $color;
+  -o-box-shadow: $values $color;
+  box-shadow: $values $color;
+}

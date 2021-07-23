@@ -1,0 +1,62 @@
+@mixin default-heading {
+  margin: 0;
+  font-weight: normal;
+}
+@mixin h1($margin: true) {
+  @include default-heading;
+  font-size: $h1-size;
+  line-height: $h1-line-height;
+  @if $margin {
+    margin-bottom: $h1-margin;
+  }
+}
+@mixin h2($margin: true) {
+  @include default-heading;
+  font-size: $h2-size;
+  line-height: $h2-line-height;
+  @if $margin {
+    margin-bottom: $h2-margin;
+  }
+}
+@mixin h3($margin: true) {
+  @include default-heading;
+  font-size: $h3-size;
+  line-height: $h3-line-height;
+  @if $margin {
+    margin-bottom: $h3-margin;
+  }
+}
+@mixin h4($margin: true) {
+  @include default-heading;
+  font-size: $h4-size;
+  line-height: $h4-line-height;
+  @if $margin {
+    margin-bottom: $h4-margin;
+  }
+}
+@mixin h5($margin: true) {
+  @include default-heading;
+  font-size: $h5-size;
+  line-height: $h5-line-height;
+  @if $margin {
+    margin-bottom: $h5-margin;
+  }
+}
+@mixin h6($margin: true) {
+  @include default-heading;
+  font-size: $h6-size;
+  line-height: $h6-line-height;
+  @if $margin {
+    margin-bottom: $h6-margin;
+  }
+}
+@mixin breakpoint($flex-pivot) {
+  @media (min-width: $flex-pivot) {
+    @content;
+  }
+}
+@mixin maxbp($flex-pivot) {
+  @media (max-width: $flex-pivot - 1px) {
+    @content;
+  }
+}
